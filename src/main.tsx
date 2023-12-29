@@ -8,11 +8,11 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 const route = createBrowserRouter([
   {
-    path: "/imc",
+    path: "/",
     element: <App/>
   },
   {
-    path: "/imc/calc",
+    path: "/calc",
     element: <Calc/>
   }
 ])
