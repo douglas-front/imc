@@ -2,8 +2,8 @@ import { GiHealthNormal } from "react-icons/gi"
 import { MdOutlineNoFood } from "react-icons/md";
 import { FaRunning } from "react-icons/fa";
 import "./cards.scss"
-import { useEffect , useRef} from "react";
-import gsap from "gsap";
+// import { useEffect , useRef} from "react";
+// import gsap from "gsap";
 
 const Cards = () => {
 
@@ -12,11 +12,11 @@ const Cards = () => {
   const cards = [
     {
       name: "Saúde",
-      text: "Com o imc ideal , vc irá ter mais saude física e mental, além de mais energia no dia-a-dia",
+      text: "Com o imc ideal , você terá mais saude física e mental, além de mais energia no dia a dia",
       icon: <GiHealthNormal/>
     },
     {
-      name: "Atividade fisíca",
+      name: "Atividade física",
       text: "Fazer atividade física tem vários benefícios comprovados pela ciência",
       icon: <FaRunning/>
     },

@@ -5,11 +5,11 @@ const Nav = () => {
     <nav>
       <div className="controller-nav">
         <h1>
-          <span>IMC</span>OUTER
+          <span>IMC</span>OUT
         </h1>
         <ul>
           <li>
-            <a href="">Estatisticas</a>
+            <a href="">Estatísticas</a>
           </li>
           <li>
             <a href="">Fale conosco!</a>
