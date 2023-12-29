@@ -8,11 +8,11 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 
 const route = createBrowserRouter([
   {
-    path: "/",
+    path: "/imc-douglas-front.vercel.app",
     element: <App/>
   },
   {
-    path: "/calc",
+    path: "/imc-douglas-front.vercel.app/calc",
     element: <Calc/>
   }
 ])
