@@ -6,6 +6,7 @@ const Calc = () => {
   const [value, setValue] = useState<string>("");
   const [heightUser, setHeightUser] = useState<string>("0");
   const [weightUser, setWeightUser] = useState<string>("");
+  const [classe , setClasse] = useState<string>('obesidade')
 
   // console.log(typeof(heightUser))
 
@@ -58,8 +59,21 @@ const Calc = () => {
     const person = new imc(height, weight);
 
     const imcPerson = person.CalcImc();
+    const parse = parseFloat(imcPerson)
+
+    if(parse <= 18.4){
+      setClasse('abaixo')
+    } else if (parse >=18.5 && parse < 25){
+      setClasse('normal')
+    } else if(parse >=25 && parse < 30){
+      setClasse('sobre')
+    } else if(parse >= 30){
+      setClasse('obesidade')
+    }
 
     setValue(imcPerson);
+
+    
   };
 
   return (
@@ -82,9 +96,9 @@ const Calc = () => {
       </div>
         <div className="statusCalc">
             {status.map((element)=> (
-              <div>
+              <div className={`${classe}`}>
                 <h1>{element.typeWeight}</h1>
-                <p>{element.value}</p>
+                <p >{element.value}</p>
               </div>
             ))}
         </div>

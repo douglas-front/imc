@@ -121,6 +121,31 @@
   p{
     text-align: center;
   }
+
+  :first-child.abaixo{
+    background-color: #00a2ff;
+    width: 100%;
+
+    transition: all .3s;
+  }
+  :nth-child(2).normal{
+    background-color: #00a2ff;
+    width: 100%;
+
+    transition: all .3s;
+  }
+  :nth-child(3).sobre{
+    background-color: #00a2ff;
+    width: 100%;
+
+    transition: all .3s;
+  }
+  :last-child.obesidade{
+    background-color: #00a2ff;
+    width: 100%;
+
+    transition: all .3s;
+  }
 }
 
 .link{
