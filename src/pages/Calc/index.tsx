@@ -6,7 +6,7 @@ const Calc = () => {
   const [value, setValue] = useState<string>("");
   const [heightUser, setHeightUser] = useState<string>("0");
   const [weightUser, setWeightUser] = useState<string>("");
-  const [classe , setClasse] = useState<string>('obesidade')
+  const [classe , setClasse] = useState<string>('')
 
   // console.log(typeof(heightUser))
 
